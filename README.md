@@ -1,8 +1,6 @@
 # Notes
 A small terminal utility for taking notes.
 
-Version 0.1
-
 ## What is this repository for?
 This is a small utility that can be
 added to your bash profile to take notes in.
@@ -36,7 +34,7 @@ ask () { ag -i -A --column "$@" path/to/Notes; }
 
 ## How do I use Notes?
 
-### run Notes from Anywhere
+### Run Notes from Anywhere
 ```
    notes
 ```
@@ -45,7 +43,7 @@ ask () { ag -i -A --column "$@" path/to/Notes; }
    
    This will open vim into today's notes entry, if already opened will append to end of file.
 
-### search through Notes
+### Search through Notes
    This will return a list of all the entries that contain 'keyword'.
    
    Keep in mind this is case sensitive.
@@ -63,5 +61,5 @@ ask () { ag -i -A --column "$@" path/to/Notes; }
 
 ## Development Notes
 
-#0.1
+0.1
 * Adding alias commands to Readme
