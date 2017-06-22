@@ -25,7 +25,8 @@ added to your bash profile to take notes in.
 ```
 
 ### Add alias to .bash_profile in root directory
-   what is a [bash profile?](https://apple.stackexchange.com/questions/99835/how-to-create-bash-profile-and-profile) ?
+   what is a [bash profile?](https://apple.stackexchange.com/questions/99835/how-to-create-bash-profile-and-profile)
+   
    Add the following lines to your ~/.bash_profile
 ```
 alias notes='touch path/to/Notes/$(date '+%Y%m%d').txt; vim + path/to/Notes/$(date '+%Y%m%d').txt'
@@ -41,17 +42,19 @@ ask () { ag -i -A --column "$@" path/to/Notes; }
 ```
 
    that's it!
+   
    This will open vim into today's notes entry, if already opened will append to end of file.
 
 ### search through Notes
    This will return a list of all the entries that contain 'keyword'.
+   
    Keep in mind this is case sensitive.
 
 ```
    ask keyword
 ```
    
-   To only return 3 matches and ignore case modify your alias
+   To only return 3 matches and ignore case modify your alias to
 
 ```
    ask () { ag -i -A --column --max-count 3 --ignore-case "$@" path/to/Notes; }
